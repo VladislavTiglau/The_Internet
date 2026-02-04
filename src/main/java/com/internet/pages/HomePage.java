@@ -23,8 +23,19 @@ public class HomePage extends BasePage {
         click(multipleWindows);
     }
 
+    @FindBy(css = "a[href=\"/nested_frames\"]")
+    WebElement nestedFrames;
 
 
+    public void goToNestedFrames() {
+        click(nestedFrames);
 
+    }
 
+    @FindBy(linkText = "Dropdown")
+    WebElement dropDown;
+
+    public void goToDromdown() {
+        click(dropDown);
+    }
 }
