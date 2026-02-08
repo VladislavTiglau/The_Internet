@@ -26,10 +26,8 @@ public class HomePage extends BasePage {
     @FindBy(css = "a[href=\"/nested_frames\"]")
     WebElement nestedFrames;
 
-
     public void goToNestedFrames() {
         click(nestedFrames);
-
     }
 
     @FindBy(linkText = "Dropdown")
@@ -37,5 +35,12 @@ public class HomePage extends BasePage {
 
     public void goToDromdown() {
         click(dropDown);
+    }
+
+    @FindBy(css = "a[href='/drag_and_drop']")
+    WebElement dragAndDrop;
+
+    public void goToDragAndDrop() {
+        click(dragAndDrop);
     }
 }
