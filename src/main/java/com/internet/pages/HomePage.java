@@ -43,4 +43,11 @@ public class HomePage extends BasePage {
     public void goToDragAndDrop() {
         click(dragAndDrop);
     }
+
+    @FindBy(css = "a[href='/horizontal_slider']")
+    WebElement slider;
+
+    public void goToHorizontalSlider() {
+        click(slider);
+    }
 }
