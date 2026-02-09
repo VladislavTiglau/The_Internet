@@ -50,4 +50,11 @@ public class HomePage extends BasePage {
     public void goToHorizontalSlider() {
         click(slider);
     }
+
+    @FindBy(css = "a[href='/upload']")
+    WebElement fileUpload;
+
+    public void goToFileUpload() {
+        click(fileUpload);
+    }
 }

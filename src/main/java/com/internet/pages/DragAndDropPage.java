@@ -19,6 +19,4 @@ public class DragAndDropPage extends BasePage {
         actions.dragAndDrop(columnA,columnB).perform();
         return this;
     }
-
-
 }
